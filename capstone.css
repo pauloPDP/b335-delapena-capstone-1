@@ -2,8 +2,8 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: sans-serif;
-	color: sandybrown;
+	font-family: playfair display;
+	color: #343a40!important;
 }
 
 .navPosition {
@@ -25,7 +25,8 @@
 	background-image: url(https://thumbs.dreamstime.com/b/new-life-vs-old-sign-140140950.jpg);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
-	height: 50rem;
+	height: 56rem;
+	color: #28a745;
 }
 
 .myProjects {
@@ -59,7 +60,8 @@
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	height: 50rem;
-	position: fixed;
+	width: 100%;
+
 }
 
 .experienecesIMG {
@@ -69,4 +71,14 @@
 
 .projectLink {
 	color: #ffc107!important;
+}
+
+.customSize {
+	height: 500px;
+	width: 500px;
+}
+
+.contactLogo {
+	width: 40px;
+	height: 40px;
 }
