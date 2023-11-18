@@ -1,229 +1,175 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
+<!doctype html>
+<html lang="en">
+    <head>
+<!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Open+Sans&family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
-	<title>Bootstrap Components</title>
+        <link rel="stylesheet" href="./index.css">
 
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <title>Hello, world!</title>
+    </head>
+    <body>
+<!-- Navbar -->
+            <div class="row">
+                <div class="col-lg-2 d-none d-lg-block bg-dark m-0" style='z-index: 99;'>
+                    <div class="accordion 1 navPosition d-flex justify-content-center align-items-center flex-column row" id="accordionExample">
+                        <div class="justify-content-center align-items-center">
+                            <div class="card-body" id="headingFront">
+                                <a href="mailto:paulodelapena.pdp@gmail.com" class="btn border-dark text-white btn-lg m-1 rounded-circle">Let's Chat</a>
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-center" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"><img src="./capstone-img.jpg" class="rounded-circle nav-img">
+                                    </button>				        
+                                </h2>				      
+                            </div>
+                            <div id="collapseOne" class="collapse justify-content-center" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body justify-content-center text-center">
+                                    <ul class="justify-content-center" style="list-style:none;">
+                                        <li class="my-0 p-2 nav__links"><a href="#myProfile">My Life</a></li>
+                                        <li class="my-0 p-2 nav__links"><a href="#experiences">Experiences</a></li>
+                                        <li class="my-0 p-2 nav__links"><a href="#myProjects">My Projects</a></li>
+                                        <li class="my-0 p-2 nav__links" type="button" data-toggle="collapse" data-target="#contacts" aria-expanded="true">Other Contacts</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div id="contacts" class="collapse justify-content-center" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body justify-content-center">
+                                    <ul class="justify-content-center" style="list-style:none;">
+                                        <li class="my-0 p-2"><a href="https://www.google.com/maps/place/Barangay+Central+Bicutan,+Taguig,+Metro+Manila/@14.4908369,121.0475939,16z/data=!3m1!4b1!4m6!3m5!1s0x3397cf14427b74a7:0xda9439d99b97b383!8m2!3d14.4907835!4d121.0492766!16s%2Fg%2F125_jfjrn?entry=ttu" target="_blank">
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Google_Maps_icon_%282015-2020%29.svg/2048px-Google_Maps_icon_%282015-2020%29.svg.png" class="img-fluid contactLogo">
+                                        </a></li>
+                                        <li class="my-0 p-2"><a href="https://www.facebook.com/nget04" target="_blank">
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png" class="img-fluid contactLogo">
+                                        </a></li>
+                                        <li class="my-0 p-2"><a href="https://discord.com/channels/@me" target="_blank">
+                                            <img src="https://www.freepnglogos.com/uploads/discord-logo-png/masgter-martin-gatzka-deviantart-7.png" class="img-fluid contactLogo">
+                                        </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+<!-- Navbar -->
+<!-- Navbar Contents -->
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Open+Sans&family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+            <!-- Intro Section -->
+			<div class="lifeBG p-5" id="myProfile">
+                <img src="./waveborder2.png" class="borderBottom img-fluid">
 
-	<link rel="stylesheet" href="./capstone.css">
+                <div class="intro__content d-flex align-items-center justify-content-center text-center flex-column"> 
+                    <h1 class="mt-3 name text-white">Paulo Robles Dela Peña</h1>
+                    <h3 class="title text-white">Web Developer Trainee</h3>
+                    <p class="col-md-8 m-1 text-white intro__text">
+                        I'm a simple guy who wishes to support his family needs and dreams about having a successful business. That's why i joined zuitt to learn and have a stable job and also to start saving for my future business.
+                    </p>
+                    
 
-</head>
-<body>
+                    <div class="col-lg-12 d-flex align-items-center justify-content-center m-5">
+                        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner customSize">
+                                <div class="carousel-item active">
+                                <img src="https://i.ytimg.com/vi/un0CEsccWDk/maxresdefault.jpg" class="d-block customSize" alt="...">
+                                    <div class="carousel-caption d-none d-md-block ">
+                                    <h5 class="sliderFonts">Primary</h5>
+                                    </div>
+                                </div>
+                                <div class="img-col carousel-item">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDAyFccOqUmL9367-CiWxdG2l7fbbjAbbTGZ87ChuXAM8ds1s-io82C9sQfH018i_5xuY&usqp=CAU" class="d-block customSize" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="sliderFonts">Secondary</h5>	       
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                <img src="https://i.pinimg.com/736x/ec/9e/7a/ec9e7a0c81ec0779376da56866ee5dcf.jpg" class="d-block customSize" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="sliderFonts">Tertiary</h5>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              <img src="./waveborder.png" class="borderTop img-fluid">
+            </div>
 
+            <!-- Experience Section -->
+            <div class="min-vh-100 px-0 d-flex flex-column experiencesBG justify-content-center align-items-center container-fluid" id="experiences">
+                 <img src="./waveborder.png" class="borderTop img-fluid">
+                <h1 class="my-5 myExperiences">My Experiences</h1>
+                <div class="d-md-flex p-md-12 justify-content-center align-items-center row container-fluid">
+                    <div class="col-12 col-md-3 mx-0 mb-3 add-border" style="width: 18rem;">
+                        <div class="card-body">
+                            <img src="./jabee.png" class="img-fluid experienecesIMG"/>
+                            <h5 class="card-title myExperiences">Service Crew</h5>    
+                        </div>					
+                    </div>
+                    <div class="col-12 col-md-3 mx-0 mb-3 add-border" style="width: 18rem;">
+                        <div class="card-body">
+                            <img src="./watsons.png" class="img-fluid experienecesIMG"/>
+                            <h5 class="card-title myExperiences">Stock Clerk</h5>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 mx-0 mb-3 add-border" style="width: 18rem;">
+                        <div class="card-body">
+                            <img src="./uni.png" class="img-fluid experienecesIMG"/>
+                            <h5 class="card-title myExperiences">Factory Worker</h5>
+                        </div>
+                    </div>
+                </div>
+                <img src="./waveborder2.png" class="borderBottom img-fluid">
+            </div>
 
-	<div class="text-center">
-
-		<div class="row">
-			<div class="col-lg-2 d-none d-lg-block bg-dark m-0">
-
-				<div class="accordion 1 navPosition d-flex justify-content-center align-items-center flex-column row" id="accordionExample">
-					<div class="justify-content-center align-items-center">
-						<div class="card-body" id="headingFront">
-							<h2 class="mb-0">
-							<button class="btn btn-link btn-block text-center" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"><img src="./capstone-img.jpg" class="rounded-circle nav-img">
-							</button>				        
-							</h2>				      
-						</div>
-						<div id="collapseOne" class="collapse justify-content-center" aria-labelledby="headingOne" data-parent="#accordionExample">
-							<div class="card-body justify-content-center">
-								<ul class="justify-content-center" style="list-style:none;">
-									<li class="my-0 p-2"><a href="#myProfile">My Life</a></li>
-									<li class="my-0 p-2"><a href="#experiences">Experiences</a></li>
-									<li class="my-0 p-2"><a href="#myProjects">My Projects</a></li>
-									<li class="my-0 p-2" type="button" data-toggle="collapse" data-target="#contacts" aria-expanded="true">My Contact</a></li>
-								</ul>
-							</div>
-
-						</div>
-
-						<div id="contacts" class="collapse justify-content-center" aria-labelledby="headingOne" data-parent="#accordionExample">
-							<div class="card-body justify-content-center">
-								<ul class="justify-content-center" style="list-style:none;">
-									<li class="my-0 p-2"><a href="https://www.google.com/maps/place/Barangay+Central+Bicutan,+Taguig,+Metro+Manila/@14.4908369,121.0475939,16z/data=!3m1!4b1!4m6!3m5!1s0x3397cf14427b74a7:0xda9439d99b97b383!8m2!3d14.4907835!4d121.0492766!16s%2Fg%2F125_jfjrn?entry=ttu" target="_blank">
-										<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Google_Maps_icon_%282015-2020%29.svg/2048px-Google_Maps_icon_%282015-2020%29.svg.png" class="img-fluid contactLogo">
-									</a></li>
-									<li class="my-0 p-2"><a href="https://www.facebook.com/nget04" target="_blank">
-										<img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png" class="img-fluid contactLogo">
-									</a></li>
-									<li class="my-0 p-2"><a href="https://discord.com/channels/@me" target="_blank">
-										<img src="https://www.freepnglogos.com/uploads/discord-logo-png/masgter-martin-gatzka-deviantart-7.png" class="img-fluid contactLogo">
-									</a></li>
-									
-								</ul>
-							</div>
-
-						</div>
-
-					</div>
-					
-					</div>
-				</div>
-
-			</div>
-
-			<div class="text-center">
-
-		<div class="row">
-			<div class="col-lg-2 d-none d-lg-block justify-content-center align-items-center">
-			</div>
-			<div class="">
-				<div class="lifeBG container-fluid bg-dark p-5" id="myProfile">
-
-					<h1>Paulo Robles Dela Peña</h1>
-					<h3>Web Developer Trainee</h3>
-					<div class="row">
-						<div class="offset-md-2 col-md-8">
-							<p>
-								I'm a simple guy who wishes to support his family needs and dreams about having a successful business. That's why i joined zuitt to learn and have a stable job and also to start saving for my future business.
-							</p>
-							<a href="mailto:paulodelapena.pdp@gmail.com" class="btn btn-success btn-lg mt-3">Let's Chat</a>
-						</div>
-					</div>
-
-					<div class="row my-5 justify-content-center align-items-center">
-						<div class="offset-lg-3 col-lg-6">
-							<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-								<ol class="carousel-indicators">
-							    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-							    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-							    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-							  	</ol>
-								<div class="carousel-inner customSize">
-									<div class="carousel-item active">
-								    <img src="https://i.ytimg.com/vi/un0CEsccWDk/maxresdefault.jpg" class="d-block customSize" alt="...">
-									    <div class="carousel-caption d-none d-md-block ">
-								        <h5 class="sliderFonts">Primary</h5>
-								    	</div>
-								    </div>
-								    <div class="carousel-item">
-								      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDAyFccOqUmL9367-CiWxdG2l7fbbjAbbTGZ87ChuXAM8ds1s-io82C9sQfH018i_5xuY&usqp=CAU" class="d-block customSize" alt="...">
-									    <div class="carousel-caption d-none d-md-block">
-									    	<h5 class="sliderFonts">Secondary</h5>	       
-									    </div>
-								    </div>
-								    <div class="carousel-item">
-								    <img src="https://i.pinimg.com/736x/ec/9e/7a/ec9e7a0c81ec0779376da56866ee5dcf.jpg" class="d-block customSize" alt="...">
-									    <div class="carousel-caption d-none d-md-block">
-									    <h5 class="sliderFonts">Tertiary</h5>
-									    </div>
-								    </div>
-							  	<button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
-							   	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-							   	<span class="sr-only">Previous</span>
-								</button>
-							  	<button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
-							    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-							    <span class="sr-only">Next</span>
-							  	</button>
-								</div>
-							</div>
-						</div>
-					</div>
-
-
-				</div>
-						<div class="bg-dark min-vh-100 p-5 experiencesBG justify-content-center align-items-center" id="experiences">
-						<h1 class="my-5 myExperiences">My Experiences</h1>
-
-						<div class="d-md-flex justify-content-center p-md-5">
-							<div class="col-12 col-md-4 mx-0 mb-3 add-border" style="width: 18rem;">
-								<div class="card-body">
-									<img src="https://i.pinimg.com/1200x/db/6a/93/db6a93e026e20e61a9e1f84fb7a40b48.jpg" class="img-fluid experienecesIMG"/>
-									<h5 class="card-title myExperiences">Service Crew</h5>				    
-								</div>					
-							</div>
-
-							<div class="col-12 col-md-4 mx-0 mb-3 add-border" style="width: 18rem;">
-								<div class="card-body">
-								  	<img src="https://www.watsonsasia.com/assets/images/logo_watsons_mobile.png" class="img-fluid experienecesIMG"/>
-								    <h5 class="card-title myExperiences">Stock Clerk</h5>
-								</div>
-							</div>
-
-							<div class="col-12 col-md-4 mx-0 mb-3 add-border" style="width: 18rem;">
-								<div class="card-body">
-								  	<img src="https://w1.pngwing.com/pngs/990/168/png-transparent-black-and-white-flower-unilever-logo-company-unilever-philippines-domestos-cif-business.png" class="img-fluid experienecesIMG"/>
-								    <h5 class="card-title myExperiences">Factory Worker</h5>
-								</div>
-							</div>
-						</div>
-					</div>
-
-
-
-					<div class="justify-content-center align-items-center d-flex flex-column row projectsBG py-5" id="myProjects">
-						<h1 class="mb-3">Tools & Projects</h1>
-
-						<div class="d-md-flex p-md-12 justify-content-center align-items-center">
-							<div class="offset-md-3 col-md-3 m-3 add-border justify-content-center" style="width: 18rem;">
-								<div class="card-body">
-								  	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/800px-HTML5_Badge.svg.png" class="img-fluid projectImages"/>
-								    
-								    <a href="./htmlOnly/index.html" target="_blank" class="card-link projectLink">Link to my work</a>
-								</div>
-							</div>
-							<div class="offset-md-3 col-md-3 m-3 add-border justify-content-center" style="width: 18rem;">
-								<div class="card-body">
-								  	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/2048px-CSS3_logo.svg.png" class="img-fluid projectImages"/>
-								    
-								    <a href="./css/index.html" target="_blank" class="card-link projectLink">Link to my work</a>
-								</div>
-							</div>
-
-							<div class="offset-md-3 col-md-3 m-3 add-border justify-content-center" style="width: 18rem;">
-								<div class="card-body">
-								  	<img src="https://i.pngimg.me/thumb/f/720/m2i8m2A0b1K9N4A0.jpg" class="img-fluid projectImages"/>
-								    
-								    <a href="./bootstrap/index.html" target="_blank" class="card-link projectLink">Link to my work</a>
-							  	</div>
-							</div>
-						</div>
-					</div>
-					
-			</div>
-		</div>
-	</div>
+<!-- Tools Experience -->
+            <div class="min-vh-100 justify-content-center align-items-center d-flex flex-column projectsBG container-fluid" id="myProjects">
+                <img src="./waveborder.png" class="borderTop img-fluid">
+                <h1 class="text-white my-5">Tools & Projects</h1>
+                <div class="d-md-flex p-md-12 justify-content-center align-items-center row">
+                    <div class="col-md-3 m-0 p-0 add-border justify-content-center" style="width: 18rem;">
+                        <div class="card-body">
+                            <img src="./htmlIMG.png" class="img-fluid projectImages"/>
+                            <a href="./htmlOnly/index.html" target="_blank" class="card-link projectLink text-white">Link to my work</a>
+                        </div>
+                    </div>
+                    <div class=" col-md-3 m-0 p-0 add-border justify-content-center" style="width: 18rem;">
+                        <div class="card-body">
+                            <img src="./cssIMG.png" class="img-fluid projectImages"/>
+                            <a href="./css/index.html" target="_blank" class="card-link projectLink text-white">Link to my work</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 m-0 p-0 add-border justify-content-center" style="width: 18rem;">
+                        <div class="card-body">
+                            <img src="./bootstrapIMG.png" class="img-fluid projectImages"/>
+                            <a href="./bootstrap/index.html" target="_blank" class="card-link projectLink text-white">Link to my work</a>
+                        </div>
+                    </div>
+                     <img src="./waveborder2.png" class="borderBottom img-fluid">
+                </div>
+               
+            </div>	
 
 
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 
-
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-
-</body>
+  
+  </body>
 </html>
-
-
-
-<!-- <button type="button" class="btn btn-primary bg-dark" data-toggle="modal" data-target="#modalDiv">
-					Send Email
-				</button>
-				
-
-				<div class="modal fade" id="modalDiv" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-						        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-						        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						        <span aria-hidden="true">&times;</span>
-						        </button>
-							</div>
-							<div class="modal-body">
-								<a href="./htmlOnly/index.html" class="img-fluid">This is our finished website using only an HTML file.
-							</div>
-							<div class="modal-footer">
-								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-								<button type="button" class="btn btn-primary">Save changes</button>
-						    </div>
-					    </div>
-					</div>
-				</div> -->

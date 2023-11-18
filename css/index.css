@@ -1,0 +1,129 @@
+/* CSS Reset */
+/* CSS reset ensures consistent styling across browsers by setting margins and padding to zero. This eliminates default spacing, providing a consistent starting point for styling. Additionally, 'box-sizing: border-box;' ensures accurate sizing by including padding and border in the specified width and height. 
+*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+nav{
+	padding: 0.8rem; 
+/*	padding-bottom: 5rem;*/
+	/* affected padding: top, left, bottom, right	*/
+/*	padding-top: 0.8rem; */
+/*	padding-left: 0.8rem; */
+/*	padding-right: 0.8rem; */
+/*	padding-bottom: 0.8rem; */
+	margin-bottom: 2rem;
+	border-bottom: 1px solid gray;
+/*	background-color: grey;*/
+}
+
+/* Descendant Selector */
+nav li{
+	list-style-type: none;
+}
+
+.nav, .nav-logo{
+	margin: 0.5rem;
+	display: inline;
+}
+
+
+#intro{
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 2rem;
+	padding-bottom: 3rem;
+	text-align: center;
+}
+
+.header{
+	text-align: center;
+}
+
+#intro h2, #intro p{
+	margin-bottom: 1rem;
+}
+
+#intro button{
+/*text color	*/
+	color: white; 
+	font-weight: bold;
+	background-color: #c2195b;
+	padding: 1rem;
+	font-size: 1rem;
+	border-radius: 25px;
+}
+
+#succeed-info{
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 2rem;
+	padding-bottom: 3rem;
+/*	background-color: grey;*/
+}
+
+#succeed-info h2{
+	margin-bottom: 1rem;
+}
+
+#succeed-info h3{
+	text-align: center;
+}
+
+#succeed-info .card{
+	display: inline-block;
+	width: 31%;
+	vertical-align: top;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+
+	min-height: 175px;
+}
+/* descendant selector */
+/*footer span{
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}*/
+
+#pre-footer{
+	padding: 1rem;
+	color: white;
+	background-color: #002540;
+}
+
+.prefooter-card{
+	width: 20%;
+	display: inline-block;
+	
+}
+
+#pre-footer > .prefooter-card {
+
+	margin-bottom: .3rem;
+	margin-top: .3rem;
+}
+footer{
+	padding: 0.7rem;
+}
+
+/* child selector */
+footer > span{
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
